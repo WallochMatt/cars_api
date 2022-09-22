@@ -1,5 +1,7 @@
 from django.db import models
 
+from dealerships.models import Dealership
+
 # Create your models here.
 
 class Car(models.Model):
@@ -8,3 +10,4 @@ class Car(models.Model):
     year = models.IntegerField()
     price = models.DecimalField(max_digits=8, decimal_places=2)
     color = models.CharField(max_length=255)
+    fk_dealership_id = models.ForeignKey(Dealership, on_delete=models.CASCADE)
