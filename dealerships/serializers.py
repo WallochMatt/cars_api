@@ -4,4 +4,4 @@ from .models import Dealership
 class DealershipSerializer(serializers.ModelSerializer):
     class Meta:
         model = Dealership
-        fields = ['name', 'address']
+        fields = ['id', 'name', 'address']
