@@ -146,6 +146,31 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Get_Color",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/cars/black/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"cars",
+						"black",
+						""
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
