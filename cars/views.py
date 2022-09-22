@@ -34,3 +34,10 @@ def car_detail(request, pk):
     elif request.method == 'DELETE':
         car.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+
+@api_view(['GET'])
+def cars_by_color(request, color):
+    if request.method == 'GET':
+        cars = Car.objects.filter(color=color)
+        serializer = CarSerializer(cars, many=True)
+        return Response(serializer.data)

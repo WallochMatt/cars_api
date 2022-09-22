@@ -11,7 +11,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.AddField(
-            model_name='Car',
+            model_name='car',
             name='color',
             field=models.CharField(default='Black', max_length=255),
         ),
